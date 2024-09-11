@@ -15,7 +15,7 @@ export const configureRoutes = () => {
 
   // Handle 404
   router.all("/*", (_, res) =>
-      res.status(404).json({
+       res.status(404).json({
       error: "Requested URL not found!",
     }),
   );
