@@ -11,7 +11,8 @@
     "allowJs": true,
     "noImplicitAny": true,
     "paths": {
-      "@entities": ["./entities"],
+      "@entities": ["./db/entities"],
+      "@db": ["./db"],
       "@helpers": ["./helpers"],
       "@types": ["./types"],
       "@modules": ["./modules"],
@@ -23,6 +24,6 @@
   },
   "emitDecoratorMetadata": true,
   "experimentalDecorators": true,
-  "include": ["src/**/*.ts", "src/types/types.ts", "src/types/router.delegates.ts"],
+  "include": ["src/**/*.ts", "src/types/types.ts"],
   "exclude": ["node_modules"]
 }

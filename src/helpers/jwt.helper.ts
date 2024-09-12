@@ -1,5 +1,5 @@
+import { Constants } from "@configs";
 import jwt from "jsonwebtoken";
-import { Constants } from "../configs/constants";
 
 export const encode = <T extends object>(data: T): string => {
   return jwt.sign(data, `${process.env.JWT_SECRET}_${Constants.JWT_TOKEN_VERSION}`);

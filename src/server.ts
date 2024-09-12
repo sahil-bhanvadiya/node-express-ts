@@ -1,4 +1,3 @@
-import { initializeDB } from "@configs";
 import { UserEntity } from "@entities";
 import { enableCors, envValidator, handleUnhandledPromise, logger } from "@helpers";
 import { json, urlencoded } from "body-parser";
@@ -10,6 +9,7 @@ import methodOverride from "method-override";
 import { destructPager } from "middlewares";
 import morgan from "morgan";
 import "reflect-metadata";
+import { initializeDB } from "db/db";
 import { configureRoutes } from "./routes";
 
 dotenv.config();

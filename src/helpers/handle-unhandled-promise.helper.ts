@@ -1,4 +1,4 @@
-import { logger } from "./logger.helper";
+import { logger } from "@helpers";
 
 export const handleUnhandledPromise = (): void => {
   process

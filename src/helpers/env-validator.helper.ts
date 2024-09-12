@@ -1,6 +1,6 @@
 import { Constants } from "@configs";
+import { logger } from "@helpers";
 import { z } from "zod";
-import { logger } from "./logger.helper";
 
 const envSchema = z.object({
   port: z.number().int().max(9999),

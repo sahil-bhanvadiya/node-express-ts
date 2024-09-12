@@ -1,5 +1,5 @@
+import { logger } from "@helpers";
 import { DataSource, DataSourceOptions } from "typeorm";
-import { logger } from "../helpers/logger.helper";
 
 let dataSource: DataSource | null = null;
 
