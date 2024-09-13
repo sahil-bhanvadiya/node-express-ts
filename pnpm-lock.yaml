@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@trpc/server':
+        specifier: ^10.45.2
+        version: 10.45.2
       bcrypt:
         specifier: ^5.1.1
         version: 5.1.1
@@ -433,6 +436,9 @@ packages:
 
   '@sqltools/formatter@1.2.5':
     resolution: {integrity: sha512-Uy0+khmZqUrUGm5dmMqVlnvufZRSK0FbYzVgp0UMstm+F5+W2/jnEEQyc9vo1ZR/E5ZI/B1WjjoTqBqwJL6Krw==}
+
+  '@trpc/server@10.45.2':
+    resolution: {integrity: sha512-wOrSThNNE4HUnuhJG6PfDRp4L2009KDVxsd+2VYH8ro6o/7/jwYZ8Uu5j+VaW+mOmc8EHerHzGcdbGNQSAUPgg==}
 
   '@tsconfig/node10@1.0.11':
     resolution: {integrity: sha512-DcRjDCujK/kCk/cUe8Xz8ZSpm8mS3mNNpta+jGCA6USEDfktlNvm1+IuZ9eTcDbNk41BHwpHHeW+N1lKCz4zOw==}
@@ -3152,6 +3158,8 @@ snapshots:
       selderee: 0.11.0
 
   '@sqltools/formatter@1.2.5': {}
+
+  '@trpc/server@10.45.2': {}
 
   '@tsconfig/node10@1.0.11': {}
 

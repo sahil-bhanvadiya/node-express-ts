@@ -10,6 +10,7 @@ import { destructPager } from "middlewares";
 import morgan from "morgan";
 import "reflect-metadata";
 import { initializeDB } from "db/db";
+import { trpc } from "tRPC/trpc";
 import { configureRoutes } from "./routes";
 
 dotenv.config();
@@ -52,8 +53,11 @@ export const createServer = async () => {
   // Destruct Pager from query string and typecast to numbers
   app.use(destructPager);
 
+  // tRPC Middleware
+  app.use("/trpc", trpc);
+
   // Routing
-  app.use("/", configureRoutes());
+  app.use("/", configureRoutes);
 
   // Start server
   app.listen(envs.port, () => {
