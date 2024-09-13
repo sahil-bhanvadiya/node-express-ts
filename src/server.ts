@@ -53,7 +53,7 @@ export const createServer = async () => {
   app.use(destructPager);
 
   // Routing
-  app.use("/", configureRoutes());
+  app.use("/", configureRoutes);
 
   // Start server
   app.listen(envs.port, () => {
